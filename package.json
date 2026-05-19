@@ -1,0 +1,43 @@
+{
+  "name": "@rabbx/bytes",
+  "version": "1.0.0",
+  "description": "Blazing fast bytes converter and parser",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports":{
+    ".":{
+     "types": "dist/index.d.ts",
+     "import": "dist/index.js",
+     "default": "dist/index.js"
+    }
+  },
+  "files": ["dist","readme.md","licence.md"],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rabbxdev/bytes.git"
+  },
+  "homepage": "https://github.com/rabbxdev/bytes#readme",
+  "bugs": {
+    "url": "https://github.com/rabbxdev/bytes/issues"
+  },
+  "keywords": [
+    "bytes",
+    "size",
+    "format",
+    "parse",
+    "human-readable",
+    "fast",
+    "zero-dependency"
+  ],
+  "author": "rabbxdev",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
