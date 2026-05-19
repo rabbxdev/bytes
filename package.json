@@ -1,6 +1,6 @@
 {
   "name": "@rabbx/bytes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blazing fast bytes converter and parser",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -15,8 +15,8 @@
   "files": ["dist","readme.md","licence.md"],
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "build": "tsc && bun build src/index.ts --outfile dist/index.js --format esm --minify",
+    "prepublishOnly": "bun run build"
   },
   "repository": {
     "type": "git",
